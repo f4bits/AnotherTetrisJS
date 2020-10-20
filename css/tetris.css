@@ -1,0 +1,104 @@
+:root {
+  --grid-cols: 1;
+  --grid-rows: 1;
+}
+
+#container {
+  display: grid;
+  grid-gap: 0;
+  grid-template-rows: repeat(var(--grid-rows), 35px);
+  grid-template-columns: repeat(var(--grid-cols), 35px);
+}
+
+#preview {
+  display: grid;
+  grid-gap: 0;
+  grid-template-rows: repeat(var(--grid-rows), 35px);
+  grid-template-columns: repeat(var(--grid-cols), 35px);
+}
+
+.play-area {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+
+.grid-item {
+  width: 400px;
+  padding: 1em;
+  text-align: center;
+}
+
+.board-item {
+  padding: 1em;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.indicator {
+  display: inline-block;
+  padding: 15px;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial;
+}
+
+.indicator h4 {
+  font-weight: bold;
+  font-size: 20px;
+  background-color: gold;
+  font-family: Arial;
+}
+
+.message {
+  font-size: 30px;
+  font-family: Arial;
+  color: red;
+}
+
+.instructions {
+  font-size: 15px;
+  font-family: Arial;
+  color: black;
+}
+
+.score-box {
+  font-family: Arial;
+  border-radius: 25px;
+  font-size: 30px;
+  border: 3px solid black;
+  padding: 30px;
+  color: black;
+}
+
+.button {
+  box-shadow: 0px 10px 14px -7px #3e7327;
+  background: linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
+  background-color: #77b55a;
+  border-radius: 4px;
+  border: 1px solid #4b8f29;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 9px 19px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #5b8a3c;
+}
+.button:hover {
+  background: linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
+  background-color: #72b352;
+}
+.button:active {
+  position: relative;
+  top: 1px;
+}
