@@ -2,4 +2,4 @@
 
 Tetris clone without all the bells and whistles
 
-![Screenshot]tetristhumb.gif
+![Picture]tetristhumb.gif
